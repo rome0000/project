@@ -1,1 +1,9 @@
-{{post.title}}
+{% extends 'base.html' %}
+{% block contents %}
+<center>
+<div class="container pt-5"></div>
+<h1>{{post.title}}</h1>
+<p>{{post.content}}</p>
+</center>
+{% endblock contents %}
+

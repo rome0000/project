@@ -12,8 +12,8 @@ class Post(models.Model):
     slug = models.SlugField(max_length=255)
     image = models.ImageField(upload_to="images/",default="images/default.png")
 
-def __str__(self):
-    return self.title
+    def __str__(self):
+        return self.title
 
-def get_absolute_url(self):
-    return reverse("blog:single", args=[self.slug])
+    def get_absolute_url(self):
+        return reverse("blog:single", args=[self.slug])
