@@ -6,6 +6,7 @@ from . import views
 
 urlpatterns = [
     path('', views.home, name="home page"),
+    path('single/<slug:slug>', views.single, name="single"),
 ]
 
 
