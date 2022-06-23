@@ -8,3 +8,6 @@ def home(request):
 def single(request, slug):
     data = Post.objects.get(slug=slug)
     return render(request, "single.html",{"post":data})
+
+def aboutus(request):
+    return render(request, "aboutus.html",{})
